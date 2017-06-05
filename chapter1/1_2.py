@@ -19,7 +19,5 @@ def Permutation(s1, s2):
     else:
         return False
         
-    
-
 result = Permutation(string1, string2)
 print(result)
