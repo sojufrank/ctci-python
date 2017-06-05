@@ -1,4 +1,5 @@
 # 1.3 URLify
+# not sure if i am supposed to strip the whitespace at end of string, but i did
 
 string = 'Mr John Smith '
 
