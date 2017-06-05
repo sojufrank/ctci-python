@@ -1,5 +1,4 @@
 # 1.6 String Compression
-# a2b1c5a3
 
 string = 'aabcccccaaa'
 
