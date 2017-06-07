@@ -1,3 +1,5 @@
+#2.6 Palindrome
+
 class linkedList:
     def __init__(self):
         self.head = None
@@ -20,30 +22,27 @@ class linkedList:
         while current != None:
             print(current.value)
             current = current.next
-        print('\n')
 
-    def reverse(self):
+    def palindrome(self):
         current = self.head
+        str = ''
+        while current != None:
+            str += current.value
+            current = current.next
 
-        def recursion(self, pointer, prev):
-            if pointer.next == None:
-                self.head = pointer
-                pointer.next = prev
-                return
-            else:
-                recursion(self, pointer.next, pointer)
-                pointer.next = prev
-            return pointer.next
-        tail = recursion(self, current.next, current)
-        tail.next = None
+        if str == str[::-1]:
+            return True
+        else:
+            return False
+
             
 
-test = linkedList()
 
-s = 'hello world'
-for c in s:
+test = linkedList()
+string = 'eye'
+for c in string:
     test.insert(c)
 test.listPrint()
-test.reverse()
-test.listPrint()
-    
+result = test.palindrome()
+print(result)
+
