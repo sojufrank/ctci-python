@@ -36,6 +36,7 @@ class linkedList:
                     if n == 1:
                         elem = pointer.value
                         f = True
+                        return elem, f
                     return 1, f
                 else:
                     x, f = rec(pointer.next, n, f)
@@ -53,7 +54,7 @@ class linkedList:
         return rec(current, n, flag)
 
 ll = linkedList()
-test = range(10)
+test = 'hello world'
 
 for i in test:
     ll.insert(i)
