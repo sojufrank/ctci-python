@@ -50,6 +50,13 @@ class stackMinList(linkedList):
 
     def min(self):
         return mini.peek();
+
+    def pop(self):
+        current = self.head
+        self.head = self.head.next
+        if current.value == mini.peek():
+            mini.pop()
+        return current
         
 mini = linkedList()
 test = stackMinList()
@@ -60,4 +67,11 @@ for i in arr:
 test.listPrint()
 mini.listPrint()
 
-print(test.min())
+test.pop()
+test.pop()
+test.pop()
+test.pop()
+test.pop()
+
+test.listPrint()
+mini.listPrint()
